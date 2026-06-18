@@ -1,0 +1,50 @@
+Please format the selected notebook markdown cell in the same style as my reference problem cell.
+
+Goal
+Make it look like a DSA problem statement cell with consistent heading, bullets, indentation, examples, and constraints.
+
+Formatting rules
+1. Keep notebook JSON valid.
+2. If editing an existing cell, preserve metadata.id and metadata.language.
+3. Use markdown cell structure with source as an array of strings.
+4. Use this exact visual pattern:
+   1. Heading line: #### Problem Title
+   2. Problem statement bullet:
+      - Given ..., do ...
+      with optional indented Note line under it.
+   3. Blank line.
+   4. Example blocks:
+      - Example 1\
+          Input: ...\
+          Output: ...\
+          Explanation:\
+          ...
+      - Example 2\
+          Input: ...\
+          Output: ...\
+          Explanation:\
+          ...
+   5. Blank line.
+   6. Constraints block:
+      - Constraints\
+          ...
+5. Match spacing and indentation exactly like the reference:
+   1. Bullet starts with - 
+   2. Sub-lines use 4 leading spaces
+   3. Keep blank lines between major sections
+6. Do not change problem meaning, only formatting and consistency.
+7. Do not mention cell ids in user-facing text.
+
+Optional strict output instruction
+Return only the updated cell JSON object.
+
+Quick fill-in version
+Format this markdown cell with:
+1. Title: [Your Title]
+2. Statement: [One-line problem statement]
+3. Note: [Optional]
+4. Example 1 input/output/explanation
+5. Example 2 input/output/explanation
+6. Constraints
+
+Match my existing DSA notebook style exactly (heading + bullet statement + indented examples + constraints + clean spacing).
